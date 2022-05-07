@@ -1,38 +1,137 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  width: 75%;
+  border: 2px solid black;
+  /* border-radius: 12px; */
+  margin: 20px auto;
+}
+
+.header {
+    /* width: 75%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px;
+    background-color: rgb(51, 65, 77);
+    height: 50px;
+    /* border-radius: 10px; */
+}
+.header h1 {
+  font-size: 1em;
+  color: white;
+  padding-left: 25px;
+}
+
+.btn {
+    display: inline-block;
+    color: #fff;
+    background-color: black;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    /* border-radius: 10px; */
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+    /* font-family: inherit; */
+    font-size: 1em;
+}
+
+.nothing {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.employee {
+  background: #f4f4f4;
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  /* border-radius: 10px; */
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.employee h3 {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.form {
+  /* margin-bottom: 40px; */
+  width: 95%;
+  margin: 0 auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-control {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-control label {
+  align-self: center;
+  font-size: 1.5em;
+  width: 30%;
+  background-color: #eee;
+  padding-left: 10px;
+}
+
+.form-control input {
+  width: 70%;
+  height: 40px;
+  margin: 5px;
+  padding: 3px 7px;
+  font-size: 17px;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+
+.footer {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.about {
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+}
+
+.emp-table {
+  width: 99%;
+  margin: 0 auto;
+  
+}
+
+table { 
+  width: 100%; 
+  border-collapse: collapse; 
+  border-radius: 20px;
+}
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+  background: #eee; 
+}
+th { 
+  background: #333; 
+  color: white; 
+  font-weight: bold; 
+}
+
+td, th { 
+  padding: 6px; 
+  border: 1px solid #ccc; 
+  text-align: left; 
 }
